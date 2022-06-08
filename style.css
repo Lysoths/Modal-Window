@@ -11,14 +11,16 @@ body {
   background-color: #2a9d8f;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
   width: 100%;
 }
 
 .container-modal {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
+  height: 30px;
   align-items: center;
 }
 
@@ -119,6 +121,7 @@ body {
   display: none;
   flex-direction: column;
   width: 40%;
+  transform: translateY(50%);
 }
 
 .opening .close-tag {
