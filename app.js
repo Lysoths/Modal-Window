@@ -7,6 +7,7 @@ containerMenu.forEach((a) => {
   a.addEventListener("click", () => {
     openingMenu.classList.toggle("active");
     opening.classList.toggle("active");
+    opening.classList.add("hide-effect");
   });
 });
 
