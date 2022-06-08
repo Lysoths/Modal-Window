@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #2a9d8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+  .container-modal {
+    flex-direction: column;
+  }
+  .opening {
+    width: 100% !important;
+  }
+}
+
+.modal1 {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal1:hover {
+  background-color: rgba(0, 0, 0, 0.555);
+  color: White;
+}
+.modal2:hover {
+  background-color: rgba(0, 0, 0, 0.555);
+  color: White;
+}
+
+.modal3:hover {
+  background-color: rgba(0, 0, 0, 0.555);
+  color: White;
+}
+
+.modal2 {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal3 {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.opening-modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.516);
+  width: 100%;
+}
+
+.active {
+  display: inline !important;
+}
+
+.opening {
+  padding: 30px;
+  background-color: White;
+  border-radius: 10px;
+  z-index: 10;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 40%;
+}
+
+.opening .close-tag {
+  display: flex;
+  justify-content: space-between;
+}
+.opening .close-tag i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.opening .header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.opening .text {
+  text-indent: 50px;
+  text-align: justify;
+}
